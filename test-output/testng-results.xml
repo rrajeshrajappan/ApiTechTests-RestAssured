@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-27T22:15:26 NZST" name="ApiTechTests" finished-at="2021-08-27T22:15:27 NZST" duration-ms="1269">
+    <groups>
+    </groups>
+    <test started-at="2021-08-27T22:15:26 NZST" name="Validate TradeME api Response body" finished-at="2021-08-27T22:15:27 NZST" duration-ms="1269">
+      <class name="apiTests.TechTests">
+        <test-method signature="assertCanRelistIsTrue()[pri:0, instance:apiTests.TechTests@644ded04]" started-at="2021-08-27T22:15:26 NZST" name="assertCanRelistIsTrue" finished-at="2021-08-27T22:15:27 NZST" duration-ms="981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertCanRelistIsTrue -->
+        <test-method signature="assertCarbonCreditsNameExists()[pri:0, instance:apiTests.TechTests@644ded04]" started-at="2021-08-27T22:15:27 NZST" name="assertCarbonCreditsNameExists" finished-at="2021-08-27T22:15:27 NZST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertCarbonCreditsNameExists -->
+        <test-method signature="assertPromotionNameandDescriptionValues()[pri:0, instance:apiTests.TechTests@644ded04]" started-at="2021-08-27T22:15:27 NZST" name="assertPromotionNameandDescriptionValues" finished-at="2021-08-27T22:15:27 NZST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertPromotionNameandDescriptionValues -->
+        <test-method signature="validateResponse()[pri:0, instance:apiTests.TechTests@644ded04]" started-at="2021-08-27T22:15:27 NZST" name="validateResponse" finished-at="2021-08-27T22:15:27 NZST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponse -->
+      </class> <!-- apiTests.TechTests -->
+    </test> <!-- Validate TradeME api Response body -->
+  </suite> <!-- ApiTechTests -->
+</testng-results>
