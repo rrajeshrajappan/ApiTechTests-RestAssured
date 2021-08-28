@@ -5,20 +5,15 @@ import static org.hamcrest.Matchers.*;
 
 public class ReusableComponents extends TestConfigurations {
 	
-	public static void getResponseAndValidateStatus() {
-		res.then().assertThat().statusCode(200).log().all();
+	public void getResponseAndValidateStatus(int statusCode, String statusLine) {
+		res.then().assertThat().statusCode(statusCode).and().statusLine(statusLine).log().all();
 	}
 	
-	public void validateCarbonCreditsNameExists() {
-		res.then().assertThat().body("Name", equalTo("Carbon credits"));
+	public void validateResponseValues(String key, Object assertionValue) {
+		res.then().assertThat().body(key, equalTo(assertionValue));
 	}
 	
-	public void validateCanRelistIsTrue() {
-		res.then().assertThat().body("CanRelist", equalTo(true));
-	}
-	
-	public void validatePromotionNameandDescription() {
-		res.then().assertThat().body("Promotions.Name", hasItem("Gallery")).and()
-		.body("Promotions.Description", hasItem("Good position in category"));
+	public void validateResponseArrayValues(String key, Object assertionValue) {
+		res.then().assertThat().body(key, hasItem(assertionValue));
 	}
 }

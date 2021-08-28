@@ -12,10 +12,16 @@ Acceptance Criteria:
 3. The Promotions element with Name = "Gallery" has a Description that contains the text "Good position in category"
 
 #Solution overview: 
-Automated the given requirements using Maven, Java RESTAssured library with TestNG reporting. Project structure is,
-src/java/main --> got all the test configurations and helper methods
-src/java/test --> got all the tests
-pom.xml --> got all the project information with dependency details
+Automated the given requirements using Maven, Java RESTAssured library with TestNG framework and soution uploaded in git repository.
+
+#project structure:
+ApiTechTests-RestAssured/src/java/main --> All the test configurations and helper methods
+ApiTechTests-RestAssured/src/java/test --> All the tests
+ApiTechTests-RestAssured/pom.xml --> All the project dependencies and information 
+
+#How it works: 
+1. The tester updates the testng.xml with the assertion values and the test suite, class details.
+2. During test execution testng, look the tests needs to be executed -> get the parmeters -> pass it to test methods -> call the reusable methods from helpers class
 
 #Clone the project: 
 clone the project into your local using - 
@@ -23,13 +29,7 @@ git clone https://github.com/rrajeshrajappan/ApiTechTests-RestAssured.git
 
 #How to run the tests
 1. import the project into your IDE as Maven project
-2. goto "ApiTechTests-RestAssured/src/test/java/apiTests/TechTests.java" class file --> run as TestNG tests or
-
-goto ApiTechTests-RestAssured/testNG.xml --> run as TestNG testsuite
+2. goto "ApiTechTests-RestAssured/src/test/java/apiTests/TechTests.java" class file --> run as TestNG tests or goto ApiTechTests-RestAssured/testNG.xml --> run as TestNG testsuite
 
 #Analyze the test results
-goto ApiTechTests-RestAssured/test-output --> open index.html in browser
-
-
-#Note: 
-this solution can be extended with cucumber BDD framework or Spring   
+After run the tests refresh the project(only first time) and goto ApiTechTests-RestAssured/test-output --> open index.html in browser.
