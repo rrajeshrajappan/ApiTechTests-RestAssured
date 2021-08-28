@@ -19,10 +19,6 @@ ApiTechTests-RestAssured/src/java/main --> All the test configurations and helpe
 ApiTechTests-RestAssured/src/java/test --> All the tests
 ApiTechTests-RestAssured/pom.xml --> All the project dependencies and information 
 
-#How it works: 
-1. The tester updates the testng.xml with the assertion values and the test suite, class details.
-2. During test execution testng, look the tests needs to be executed -> get the parmeters -> pass it to test methods -> call the reusable methods from helpers class
-
 #Clone the project: 
 clone the project into your local using - 
 git clone https://github.com/rrajeshrajappan/ApiTechTests-RestAssured.git
@@ -30,6 +26,9 @@ git clone https://github.com/rrajeshrajappan/ApiTechTests-RestAssured.git
 #How to run the tests
 1. import the project into your IDE as Maven project
 2. goto "ApiTechTests-RestAssured/src/test/java/apiTests/TechTests.java" class file --> run as TestNG tests or goto ApiTechTests-RestAssured/testNG.xml --> run as TestNG testsuite
+
+#How it works: 
+During test execution testng, look for the tests needs to be executed -> get the parmeters -> pass it to test methods -> call the reusable methods from helpers class ->execute the tests and do assertions -> generate the test results
 
 #Analyze the test results
 After run the tests refresh the project(only first time) and goto ApiTechTests-RestAssured/test-output --> open index.html in browser.
